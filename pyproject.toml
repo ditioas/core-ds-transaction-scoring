@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "core-ds-transaction-scoring"
+version = "0.1.0"
+description = ""
+authors = ["Evgeny Grigorenko <egrigorenko@ditio.no>"]
+
+[tool.poetry.dependencies]
+python = "~3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
