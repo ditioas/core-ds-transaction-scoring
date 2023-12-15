@@ -17,7 +17,7 @@ def main() -> None:
     while True:
         recent_transactions = get_recent_transaction(last_checked, client)
 
-        last_checked = datetime.datetime.utcnow()
+        last_checked = datetime.datetime.now(datetime.UTC)
 
         for transaction in recent_transactions:
             set_probability_score(transaction, client)
