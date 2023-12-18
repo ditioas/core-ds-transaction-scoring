@@ -51,9 +51,8 @@ venv.bak/
 # Docker
 docker-compose.yml
 
-# Fleet
-.fleet
-.vscode/launch.json
+# VSCode
+.vscode/
 
 # Profile output
 *.pstats
