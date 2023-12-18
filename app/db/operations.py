@@ -1,6 +1,7 @@
 import datetime
 from typing import Any, Generator
 
+from loguru import logger
 from pymongo import MongoClient
 
 from app.config import settings
@@ -58,6 +59,8 @@ def set_probability_score(
     ]
 
     collection.aggregate(pipeline)
+
+    logger.info(f"Set probability score for transaction {transaction.TransactionId}")
 
 
 def get_recent_transaction(
